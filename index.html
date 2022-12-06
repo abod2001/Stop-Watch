@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <h2 style="margin-top: 200px;margin-bottom: 20px;">Abdul Rahman</h2>
+    <div class="warpper">
+        <input class="radio" id="one" name="group" type="radio" checked>
+        <input class="radio" id="two" name="group" type="radio">
+        <input class="radio" id="three" name="group" type="radio">
+        <div class="tabs">
+            <label class="tab" id="one-tab" for="one">Stop Watch</label>
+            <label class="tab" id="two-tab" for="two">Timer</label>
+        </div>
+        <div class="panels">
+            <div class="panel" id="one-panel">
+                <div class="panel-title" style="margin-top: 10px;">Stop Watch</div>
+                <div class="dtdsd">
+                    <span id="min" style="font-size: 80px; margin-left: 70px;">00</span>
+                    <p style="font-size: 80px;">:</p>
+                    <span id="sec" style="font-size: 80px;">00</span>
+                    <p style="font-size: 20px; margin-top: 59px;">:</p>
+                    <span id="m-sec" style="margin-top: 63px;">00</span>
+                </div>
+                <div class="btns">
+                    <button id="start-btn" style="margin-left: 35px;">Start</button>
+                    <button id="stop-btn">Stop</button>
+                    <button id="Reset-btn">Reset</button>
+                </div>
+            </div>
+            <div class="panel" id="two-panel">
+                <div class="panel-title" style="margin-top: 10px;">Timer</div>
+                <span id="countdown">00:00</span>
+                <div class="centerbtn"></div>
+                <input placeholder="Enter min" type="number" value="" id="inputCount">
+                <button onclick="countDown()" class="startTimerbtn">Start</button>
+                <button onclick="countDown()" id="resetTimerbtn">Reset</button>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="asset/js/index.js"></script>
+</body>
+
+</html>
